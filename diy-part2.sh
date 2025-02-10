@@ -18,3 +18,9 @@ sed -i 's/192.168.1.1/172.16.0.99/g' package/base-files/files/bin/config_generat
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
+git_sparse_clonehttps://github.com/morytyann/OpenWrt-mihomo.git
+git clone https://github.com/Thaolga/luci-app-nekoclash  package/luci-app-nekoclash
+git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
+git_sparse_clone main https://github.com/linkease/istore luci
